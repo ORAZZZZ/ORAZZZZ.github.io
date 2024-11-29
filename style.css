@@ -1,89 +1,60 @@
-* {   
-    box-sizing: border-box;
+/* General Styles */
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     margin: 0;
-
+    padding: 0;
   }
   
-  body {
-    font-family: Comic Sans MS;
-    font-style: italic;
-    font-size: 20px;
-
+  h1, h3 {
+    font-weight: bold;
   }
   
-  .row {
-    width: 100%;
+  a {
+    text-decoration: none;
   }
   
-  .menu-title {
+  .back-to-top {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+  }
+  
+  .back-to-top:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar */
+  .navbar {
+    margin-bottom: 0;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  /* Section Styles */
+  .section {
+    height: 700px;
+    padding: 20px;
     text-align: center;
-    padding-bottom: 50px;
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
   }
   
-  .container {
-    position: relative;
-    top: 60px;
-    margin: 15px;
+  .section:nth-child(odd) {
+    background-color: #eaeaea;
   }
   
-  .item {
-    position: relative;
-    top: 0;
-    background-color: #999999;
-    margin: 15px;
-    padding: 25px;
-    border: 3px solid #000;
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
   }
   
-  .item p {
-    margin-top: 18px;
-    padding-top: 25px;
-    text-align: justify;
-    font-size: 100%;
+  footer p {
+    margin: 0;
   }
   
-  .item-title {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    padding: 6px 90px;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
-  }
-  
-  #title-one {
-    background-color: #D59898;
-  }
-  
-  #title-two {
-    background-color: #C14543;  
-  }
-  
-  #title-three {
-    background-color: #E5D198;
-  }
-  
-  @media (min-width: 992px) {
-    .col-lg-4 {
-      float: left; 
-      width: 33.33%; 
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-lg-4 {
-      width: 50%;
-      float: left;
-    }
-    .col-lg-tablet{
-     width: 100%;
-     float: left;
-   }
-  }
-  
-  @media (max-width: 767px) {
-    .col-lg-4{
-      width: 100%;
-      float: left;
-    }
-  }
